@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>R Marble Palace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-loader">
+        <div class="logo-container">
+          <img src="home-images/logo-loader.png" alt="Logo" class="shine-logo" />
+          <div class="shine-effect"></div>
+        </div>
+    </div>
+           
+    <header>
+        <div class="logo">
+            <a href = "index.html">
+                <img src="logo/logo.svg" alt="logo_image">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Animated Hamburger Menu Button -->
+        <div class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    
+        <!-- Dropdown Menu -->
+        <div class="menu-dropdown">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>   
+
+    <div class="slideshow">
+        <div class="slides">
+            <div class="slide">
+                <img src="home-images/home1.jpg" alt="Luxury Marble">
+                <h1>Elevate Your Interiors<br> With Luxury Marble</h1>
+            </div>
+            <div class="slide">
+                <img src="home-images/home2.jpg" alt="Timeless Beauty">
+                <h1>Transform Your Space <br>Into Timeless Beauty</h1>
+            </div>
+            <div class="slide">
+                <img src="home-images/home3.jpg" alt="Prestige">
+                <h1>Breathe In Luxury,<br>Walk On Prestige</h1>
+            </div>
+            <div class="slide">
+                <img src="home-images/home4.jpg" alt="Extraordinary">
+                <h1>Your Vision, Our Craftsmanship-<br>Let's Build Something Extraordinary</h1>
+            </div>
+        </div>
+        <div class="scroll-down" onclick="scrollToAbout()">
+            <p>Scroll Down</p>
+            <div class="scroll-indicator"></div>
+            <span class="arrow">&#x2193;</span>
+        </div>    
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <section id="about-us">
+        <div class="about-content">
+            <div class="image">
+                <img src="logo/logo_black_text.svg" alt="About Us">
+            </div>
+            <div class="text">
+                <h2>About Us</h2>
+                <p>We bring the finest marble to elevate luxury spaces. Our craftsmanship ensures timeless beauty in every design.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="counter-container">
+            <div class="counter-box">
+                <span class="counter" data-target="17">0</span>
+                <span class="plus">+</span>
+                <p>Long-Term Clients with Excellence</p>
+            </div>
+            <div class="counter-box">
+                <span class="counter" data-target="27">0</span>
+                <span class="plus">+</span>
+                <p>Years of Legacy & Trust</p>
+            </div>
+            <div class="counter-box">
+                <span class="counter" data-target="125">0</span>
+                <span class="plus">+</span>
+                <p>Projects Delivered Successfully,<br> Still Counting ....</p>
+            </div>
+        </div>
+    </section>
+    <section class="collections-section">
+        <h1 class="collections-text">COLLECTIONS</h1>
+    </section>
+    
+    <section class="bento-grid">
+        <div class="bento-card" style="grid-column: span 3; grid-row: span 4;">
+            <a href="imported-marble.html">
+            <img src="slideshow/imported/slideshow-3.png" alt="Product 1">
+        </a>
+        <h2>Imported Marble</h2>
+        </div> 
+        <div style="grid-column: span 3; grid-row: span 2;" class="hide-on-small"></div>
+        <div class="bento-card" style="grid-column: span 3; grid-row: span 4;">
+            <a href="onyx-marble.html">
+            <img src="slideshow/onyx/onyx-profile-slideshow.jpg" alt="Product 2">
+        </a>
+        <h2>Onyx Collection</h2>
+        </div>
+        <div class="bento-card" style="grid-column: span 3; grid-row: span 4;">
+            <a href="quartz-marble.html">
+            <img src="slideshow/quartz/slideshow-2.png" alt="Product 3">
+        </a>
+        <h2>Quarterize Stones</h2>
+        </div>
+        <div class="bento-card" style="grid-column: span 3; grid-row: span 4;">
+            <a href="indian-granite.html">
+            <img src="slideshow/indian-granite/slideshow-1.png" alt="Product 4">
+        </a>
+        <h2>Indian Granite</h2>
+        </div>
+        <div class="bento-card" style="grid-column: span 3; grid-row: span 4;">
+            <a href="indian-marble.html">
+            <img src="slideshow/indian-marble/slideshow-1.jpeg" alt="Product 5">
+        </a>
+        <h2>Indian Marble</h2>  
+        
+        </section>
+    <div class="popular-search">
+        <img src="home-images/popular-search.svg" alt="search-heading">
+        <div class="tag-container">
+            <span class="tag">Marble1</span>
+            <span class="tag">Marble2</span>
+            <span class="tag">Marble3</span>
+            <span class="tag">Marble4</span>
+            <span class="tag">Marble5</span>
+            <span class="tag">Marble6</span>
+            <span class="tag">Marble7</span>
+        </div>
+    </div>
+    <section class="reviews-section">
+        <h2>Customer Reviews</h2>
+        <div class="review-form">
+            <label for="star-rating">Rate Us:</label>
+            <div>
+                <div class="emoji" id="rating-emoji">😊</div>
+                </div>
+            <div class="stars" id="star-rating">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+                <div class="rating-info">
+                    <p id="total-ratings">0 Ratings</p>
+                    <p id="average-rating">Average: 0.0 ★</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <textarea id="review-text" placeholder="Write your review..." style="resize: none;"></textarea>
+        </div>
+        <div>
+            <button id="submit-review">Submit</button>
+        </div>
+        
+        <div class="review-slider">
+            <div class="reviews-container" id="reviews-container">
+                <!-- Reviews will be added here dynamically -->
+            </div>
+        </div>
+    </section>
+    <!-- Enquire Now Button (Sticky) -->
+
+<!-- Enquiry Popup Form -->
+    <footer class="footer">
+        <div class="scrolling-text">
+            <p>
+                Hello. ★ Ready to connect? ★ Say Hello. ★ Ready to connect? ★ Say Hello. ★ Ready to connect? ★
+            </p>
+        </div>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo/logo.svg" alt="R Marble Palace Logo">
+            </div>
+            <div class="footer-links">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="catalouge.html">Download Catalogue</a></li>
+                </ul>
+            </div>
+            <div class="footer-collections">
+                <h2>COLLECTIONS</h2>
+                <a href = "imported-marble.html" style="text-decoration: none;"><p>Imported Marble</p></a>
+                <a href = "onyx-marble.html" style="text-decoration: none;"><p>Onyx Marble</p></a>
+                <a href = "quartz.html" style="text-decoration: none;"><p>Quarterize</p></a>
+                <a href = "indian-marble.html" style="text-decoration: none;"><p>Indian Marble</p></a>
+                <a href = "indian-granite.html" style="text-decoration: none;"><p>Indian Granite</p></a>
+            </div>
+            <div class="footer-contact">
+                <h2>CONTACT US</h2>
+                <p>Email: rmarblepalace@gmail.com</p>
+                <p>Phone: +91 9982153020</p>
+                <p>Mobile: +91 8209707161</p>
+                <a href="https://www.instagram.com/rmarblepalace"><img src="logo/instagram-logo.png" alt="Instagram"></a>
+                <a href="https://www.Facebook.com/rmarblepalace"><img src="logo/facebook-logo.png" alt="facebook"></a>
+                <a href="https://www.Twitter.com/rmarblepalace"><img src="logo/twitter-logo.png" alt="twitter"></a>
+                <a href="https://wa.me/919982153020?text=Hi%2C%20I%20am%20interested%20in%20your%20collections"><img src="logo/whatsapp-logo.png" alt="whatsapp"></a>
+                <a href="https://www.linkedin.com/company/rmarblepalace"><img src="logo/linkedin.png" alt="LinkedIn Icon"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 R Marble Palace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="enquire-now-btn" onclick="togglePopup()">Enquire Now</div>
+
+<!-- Enquiry Popup Form -->
+<div class="enquiry-popup" id="enquiryPopup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="togglePopup()">&times;</span>
+      <img src="logo/logo_black_text.svg" alt="Logo" class="popup-logo">
+      <h2>Enquire Now</h2>
+      <form id="enquiryForm" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <!-- Country Code + Phone Number -->
+        <div style="display: flex; gap: 10px; flex-direction: row; align-items: center;">
+            <select id="countryCode" required style=" width: 30%; height: 40px; padding: 2px; border-radius: 10px;">
+                <option value="+91">🇮🇳 +91 (India)</option>
+            <option value="+1">🇺🇸 +1 (USA)</option>
+            <option value="+44">🇬🇧 +44 (UK)</option>
+            <option value="+971">🇦🇪 +971 (UAE)</option>
+            <option value="+61">🇦🇺 +61 (Australia)</option>
+            </select>
+            <input type="tel" id="phone" placeholder="Phone Number" required style="width: 70%; height: 40px; padding: 10px; border-radius: 10px;">
+        </div>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <textarea id="message" rows="4" placeholder="Your Message" style="resize: none;"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+      
+</body>
+</html>

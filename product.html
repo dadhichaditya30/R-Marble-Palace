@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>R Marble Palace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json" id="structured-data"></script>
+</head>
+
+<body>
+  <div id="page-loader">
+    <div class="logo-container">
+      <img src="home-images/logo-loader.png" alt="Logo" class="shine-logo" />
+      <div class="shine-effect"></div>
+    </div>
+  </div>
+  
+    <header>
+        <div class="logo">
+            <a href = "index.html">
+                <img src="logo/logo.svg" alt="logo_image">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Animated Hamburger Menu Button -->
+        <div class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    
+        <!-- Dropdown Menu -->
+        <div class="menu-dropdown">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header> 
+    
+    <div class="product-container">
+        <div class="product-image">
+            <img id="product-image" src="" alt="Product Image">
+            <div id="lens"></div>
+        </div>
+        <div class="marble-base">
+            <img src="images/marble-base.png" alt="Marble Base">
+        </div>
+    </div>
+    <div class="product-details">
+        <h1 id="product-name">Product Name</h1>
+        <div class="enquiry-row">
+            <div>
+                <p id="product-description">Product description goes here.</p>
+                <h2 onclick="togglePopup()">Enquire Now</h2>
+            </div>
+            <img id="product-display-image" src="" alt="Display Image">
+            </div>
+    </div>
+
+    <div class="technical-detail-text">
+        <h2>Technical Details</h2>
+    </div>
+
+    <div class="details-container">
+        <div class="specification-item">
+          <div class="specification-question">
+            <span>Specifications</span>
+            <span class="plus-icon">+</span>
+          </div>
+          <div class="specification-answer">    
+            <ul id="specification-answer-list">
+                <!-- Specifications will be dynamically added here -->
+            </ul>
+            <ul id="specification-answer-list-2">
+                <!-- Specifications will be dynamically added here -->
+            </ul>      
+          </div>
+        </div>
+      
+        <div class="feature-item">
+          <div class="feature-question">
+            <span>Features</span>
+            <span class="plus-icon">+</span>
+          </div>
+          <div class="feature-answer">
+            <ul id="product-features">
+                <!-- Features will be dynamically added here -->
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Add more questions as needed -->
+      </div>
+      
+      <div>
+        <h1 class="product-usage-text">Product Usage</h1>
+        </div>
+        <section class ="product-usage">
+            
+        </section>
+    
+    <section class="suggested-product">
+      <h2>Suggested Products</h2>
+      <button id="prevBtn" class="scroll-button">&#10094;</button>
+      <div id="suggested-products" style="display: flex; overflow: hidden; transition: transform 0.5s ease-in-out;">
+        <!-- Product cards will be dynamically inserted here -->
+      </div>
+      <button id="nextBtn" class="scroll-button">&#10095;</button>
+    </section>
+
+    
+            
+     <footer class="footer">
+        <div class="scrolling-text">
+            <p>
+                Hello. ★ Ready to connect? ★ Say Hello. ★ Ready to connect? ★ Say Hello. ★ Ready to connect? ★
+            </p>
+        </div>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo/logo.svg" alt="R Marble Palace Logo">
+            </div>
+            <div class="footer-links">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="catalouge.html">Download Catalogue</a></li>
+                </ul>
+            </div>
+            <div class="footer-collections">
+                <h2>COLLECTIONS</h2>
+                <a href = "Imported-marble.html" style="text-decoration: none;"><p>Imported Marble</p></a>
+                <a href = "onyx-marble.html" style="text-decoration: none;"><p>Onyx Marble</p></a>
+                <a href = "quartz.html" style="text-decoration: none;"><p>Quarterize</p></a>
+                <a href = "indian-marble.html" style="text-decoration: none;"><p>Indian Marble</p></a>
+                <a href = "indian-granite.html" style="text-decoration: none;"><p>Indian Granite</p></a>
+            </div>
+            <div class="footer-contact">
+                <h2>CONTACT US</h2>
+                <p>Email: rmarblepalace@gmail.com</p>
+                <p>Phone: +91 9982153020</p>
+                <p>Mobile: +91 8209707161</p>
+                <a href="https://www.instagram.com/rmarblepalace"><img src="logo/instagram-logo.png" alt="Instagram"></a>
+                <a href="https://www.Facebook.com/rmarblepalace"><img src="logo/facebook-logo.png" alt="facebook"></a>
+                <a href="https://www.Twitter.com/rmarblepalace"><img src="logo/twitter-logo.png" alt="twitter"></a>
+                <a href="https://wa.me/919982153020?text=Hi%2C%20I%20am%20interested%20in%20your%20collections"><img src="logo/whatsapp-logo.png" alt="whatsapp"></a>
+                <a href="https://www.linkedin.com/company/rmarblepalace"><img src="logo/linkedin.png" alt="LinkedIn Icon"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 R Marble Palace. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+<!-- Enquiry Popup Form -->
+<div class="enquiry-popup" id="enquiryPopup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="togglePopup()">&times;</span>
+      <img src="logo/logo_black_text.svg" alt="Logo" class="popup-logo">
+      <h2>Enquire Now</h2>
+      <form id="enquiryForm" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <!-- Country Code + Phone Number -->
+        <div style="display: flex; gap: 10px; flex-direction: row; align-items: center;">
+            <select id="countryCode" required style=" width: 30%; height: 40px; padding: 2px; border-radius: 10px;">
+                <option value="+91">🇮🇳 +91 (India)</option>
+            <option value="+1">🇺🇸 +1 (USA)</option>
+            <option value="+44">🇬🇧 +44 (UK)</option>
+            <option value="+971">🇦🇪 +971 (UAE)</option>
+            <option value="+61">🇦🇺 +61 (Australia)</option>
+            </select>
+            <input type="tel" id="phone" placeholder="Phone Number" required style="width: 70%; height: 40px; padding: 10px; border-radius: 10px;">
+        </div>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <textarea id="message" rows="4" placeholder="Your Message" style="resize: none;"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="product-data.js"></script>
+    <script src="product-loader.js"></script>
+    <script src="product.js"></script>
+    <div class="enquire-now-btn" onclick="togglePopup()">Enquire Now</div>
+
+</body>

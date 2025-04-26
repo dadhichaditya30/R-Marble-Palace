@@ -1,0 +1,241 @@
+.marble-text-heading {
+  font-family: "mulish";
+  padding-top: 10vw;
+  height: 20vw;
+  margin-bottom: 2vw;
+}
+
+.marble-text-heading h1 {
+  font-size: 40px;
+  color: #d4a017;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .marble-text-heading {
+    padding-top: 12vw;
+    height: 22vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .marble-text-heading h1 {
+    font-size: 36px; /* Adjust font size for 1024px screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .marble-text-heading {
+    padding-top: 15vw;
+    height: 25vw;
+    margin-bottom: 3vw;
+  }
+
+  .marble-text-heading h1 {
+    font-size: 32px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .marble-text-heading {
+    padding-top: 20vw;
+    height: 30vw;
+    margin-bottom: 4vw;
+  }
+
+  .marble-text-heading h1 {
+    font-size: 24px; /* Adjust font size for smartphones */
+  }
+}
+.marble-grid-section {
+  padding: 60px 5%;
+  background: #fff;
+}
+
+.marble-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .marble-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .marble-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .marble-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smartphones */
+  }
+}
+
+.marble-item {
+  text-align: center;
+  background: #f5f5f5; /* Light background */
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.marble-item:hover {
+  transform: translateY(-5px);
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-frame img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160%;
+  height: auto;
+  transform: translate(-50%, -50%) rotate(90deg);
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.marble-item p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .marble-item p {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .marble-item p {
+    font-size: 0.7rem; /* Further adjust font size for smartphones */
+  }
+}
+.faq-section {
+  padding: 60px 4%;
+  background: #f5f5f5;
+}
+
+.faq-section h1 {
+  font-size: 32px;
+  color: black;
+  text-align: center;
+}
+
+.faq-section p {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding: 0 30%;
+  margin-top: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 5%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(0deg); /* Turns "+" into "x"/"-" style */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .faq-section h1 {
+    font-size: 28px; /* Adjust font size for tablets */
+  }
+
+  .faq-section p {
+    font-size: 18px;
+    padding: 0 20%; /* Reduce padding for tablets */
+  }
+
+  .faq-question {
+    font-size: 16px; /* Adjust question font size for tablets */
+  }
+
+  .faq-icon {
+    font-size: 20px; /* Adjust icon size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-section h1 {
+    font-size: 24px; /* Adjust font size for smaller tablets */
+  }
+
+  .faq-section p {
+    font-size: 16px;
+    padding: 0 15%; /* Further reduce padding for smaller tablets */
+  }
+
+  .faq-question {
+    font-size: 14px; /* Adjust question font size for smaller tablets */
+  }
+
+  .faq-icon {
+    font-size: 18px; /* Adjust icon size for smaller tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section h1 {
+    font-size: 20px; /* Adjust font size for smartphones */
+  }
+
+  .faq-section p {
+    font-size: 14px;
+    padding: 0 10%; /* Reduce padding for smartphones */
+  }
+
+  .faq-question {
+    font-size: 12px; /* Adjust question font size for smartphones */
+  }
+
+  .faq-icon {
+    font-size: 16px; /* Adjust icon size for smartphones */
+  }
+}
